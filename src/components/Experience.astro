@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "At the moment...",
+    title: "Software Engineer",
+    company: "HelpShift",
+    description:
+      "Currently working in the leading customer service plateform. My current role is including building new feature to the product, Scale product in terms of the architecture, Mentor juniors. I primary work on the customer support website know as helpcenter.",
+    link: "https://support.helpshift.com/hc/en/",
+  },
+  {
+    date: "July 2023",
+    title: "SDE - I",
+    company: "Source.One",
+    description:
+      "It was an early stage e-commerce start-up. I was working as Full-Stack developer. Primarly working on the Admin dashboard which manage the orders of the customers. I build multiple features which directly enhaced the business.",
+  },
+  {
+    date: "July 2022",
+    title: "Digital Specilist Engineer",
+    company: "Infosys",
+    description:
+      "I was working with Goldman sachs IN team. There i was working on the the Goldman's occupancy space management system in the company office.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
